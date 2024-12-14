@@ -26,10 +26,21 @@ body{
     text-align: center;
 }
 
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .container{
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .converterBox{
@@ -38,7 +49,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 10px 20px;
     border-radius: 10px;
 }
 
